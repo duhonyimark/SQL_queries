@@ -1,0 +1,38 @@
+https://gist.github.com/9424f7e574f9a4e8c9ec00b1a2afb982
+
+Code:
+
+SELECT DISTINCT country, population
+FROM population_years
+WHERE country = 'Gabon'
+ORDER BY population DESC
+LIMIT 1;
+
+
+SELECT DISTINCT country, population
+FROM population_years
+WHERE year = 2005
+ORDER BY population ASC
+LIMIT 10;
+
+
+SELECT DISTINCT country, population
+FROM population_years
+WHERE year = 2010
+  AND population > 100;
+
+
+SELECT DISTINCT country
+FROM population_years
+WHERE country LIKE '%Islands%';
+
+
+SELECT DISTINCT country, population
+FROM population_years
+WHERE year = 2000
+  AND country = 'Indonesia';
+  
+SELECT DISTINCT country, population
+FROM population_years
+WHERE year = 2010
+  AND country = 'Indonesia';
